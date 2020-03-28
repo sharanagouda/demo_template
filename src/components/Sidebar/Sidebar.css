@@ -1,0 +1,54 @@
+.sidebar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--app-height);
+}
+
+.cover {
+  width: 77.5vw;
+  height: 56.25vw;
+  display: none;
+  vertical-align: top;
+  opacity: 0.5;
+  background: #000;
+}
+
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  box-sizing: border-box;
+  padding: 3.125vw 0;
+  width: var(--app-sidebar-width-closed);
+  height: var(--app-height);
+  overflow: hidden;
+  background-color: rgba(39, 0, 0, 0.95);
+}
+
+:global(.sidebar-open) .sidebar {
+  width: var(--app-sidebar-width-opened);
+}
+
+.sidebar .nav-item.selected {
+  background-color: transparent;
+  color: var(--c-favColor);
+  opacity: 1;
+}
+
+.sidebar .nav-item:focus,
+.sidebar .nav-item:hover {
+  background-color: var(--c-primary);
+  color: var(--white);
+  opacity: 1;
+}
+
+.logo {
+  margin-bottom: 5.7291vw;
+  height: 3.3854vw;
+
+  background-image: resolve("../../assets/images/luna_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

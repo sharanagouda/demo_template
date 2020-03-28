@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user is logged in snapshot matches 1`] = `
+Login {
+  "continueBrowsing": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <a
+      class="button no-login"
+      href="undefined"
+      replace="true"
+      tabindex="0"
+    >
+      Browse content
+    </a>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "data": Object {
+    "loggedIn": true,
+  },
+  "logoutButton": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <div
+      class="button"
+      tabindex="0"
+    >
+      Sign out
+    </div>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "onAndroidFocusChange": [Function],
+  "onSigninButtonClick": [Function],
+  Symbol(cd-tv-router-subscriptions): Array [],
+}
+`;
+
+exports[`user is not logged in snapshot matches 1`] = `
+Login {
+  "continueBrowsing": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <a
+      class="button no-login"
+      href="undefined"
+      replace="true"
+      tabindex="0"
+    >
+      Browse content
+    </a>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "data": Object {
+    "loggedIn": false,
+  },
+  "emailContainer": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <div
+      class="login-input"
+    >
+      <span
+        class="login-label"
+      >
+        Email:
+      </span>
+      <input
+        class="input"
+        tabindex="0"
+      />
+    </div>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "emailInput": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <input
+      class="input"
+      tabindex="0"
+    />,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "emailInputError": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <span
+      class="error"
+    >
+      Something went wrong
+    </span>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "loginButton": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <div
+      class="button"
+      tabindex="0"
+    >
+      Login
+    </div>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "onAndroidFocusChange": [Function],
+  "onSigninButtonClick": [Function],
+  "passwordContainer": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <div
+      class="login-input"
+    >
+      <span
+        class="login-label"
+      >
+        Password
+      </span>
+      <input
+        class="input"
+        tabindex="0"
+      />
+    </div>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "passwordInput": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <input
+      class="input"
+      tabindex="0"
+    />,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  "passwordInputError": Object {
+    "addClass": [Function],
+    "appendTo": [Function],
+    "element": <span
+      class="error"
+    >
+      To reset your password, please go to the website.
+    </span>,
+    "isMounted": false,
+    "prependTo": [Function],
+    "remove": [Function],
+    "removeClass": [Function],
+  },
+  Symbol(cd-tv-router-subscriptions): Array [],
+}
+`;

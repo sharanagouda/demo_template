@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders div 1`] = `
+Object {
+  "addClass": [Function],
+  "appendTo": [Function],
+  "element": <div />,
+  "isMounted": false,
+  "prependTo": [Function],
+  "remove": [Function],
+  "removeClass": [Function],
+}
+`;

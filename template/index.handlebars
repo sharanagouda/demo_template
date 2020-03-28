@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <script
+    src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CMap%2CSymbol%2CSymbol.for%2CSet%2Cfetch"></script>
+</head>
+
+<body>
+  <div id="loading">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.23 138.25">
+      <defs>
+        <linearGradient id="spinner-a" x1="79.38" x2="72.72" y1="29.35" y2="55.15" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fff" stop-opacity="0" />
+          <stop offset=".16" stop-color="#dee7ff" stop-opacity=".18" />
+          <stop offset=".47" stop-color="#9fbbff" stop-opacity=".53" />
+          <stop offset=".72" stop-color="#719aff" stop-opacity=".78" />
+          <stop offset=".9" stop-color="#5586ff" stop-opacity=".94" />
+          <stop offset="1" stop-color="#4a7eff" />
+        </linearGradient>
+        <linearGradient id="spinner-b" x1="287.65" x2="280.99" y1="130.81" y2="156.6"
+          gradientTransform="rotate(113.23 206.68433477 51.23854959)" gradientUnits="userSpaceOnUse">
+          <stop offset=".1" stop-color="#4a7eff" stop-opacity="0" />
+          <stop offset=".11" stop-color="#4a7eff" stop-opacity=".01" />
+          <stop offset=".29" stop-color="#4a7eff" stop-opacity=".2" />
+          <stop offset=".43" stop-color="#4a7eff" stop-opacity=".33" />
+          <stop offset=".52" stop-color="#4a7eff" stop-opacity=".4" />
+          <stop offset=".53" stop-color="#4a7eff" stop-opacity=".42" />
+          <stop offset=".64" stop-color="#4a7eff" stop-opacity=".55" />
+          <stop offset=".7" stop-color="#4a7eff" stop-opacity=".6" />
+          <stop offset=".7" stop-color="#4a7eff" stop-opacity=".6" />
+          <stop offset=".8" stop-color="#4a7eff" stop-opacity=".75" />
+          <stop offset=".84" stop-color="#4a7eff" stop-opacity=".8" />
+          <stop offset=".89" stop-color="#4a7eff" stop-opacity=".87" />
+          <stop offset=".96" stop-color="#4a7eff" stop-opacity=".96" />
+          <stop offset="1" stop-color="#4a7eff" />
+        </linearGradient>
+      </defs>
+      <g>
+        <path fill="url(#spinner-a)"
+          d="M138.22 69.1a69 69 0 1 1-4.46-24.48l-4.5 1.7-4.53 1.68a59.5 59.5 0 1 0 3.85 21.08z" />
+        <path fill="url(#spinner-b)"
+          d="M41.87 132.63a69 69 0 1 1 24.26 5.56l.21-4.8.23-4.84a59.49 59.49 0 1 0-20.9-4.78z" />
+      </g>
+    </svg>
+    <style type="text/css">
+      #loading {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        background-color: #262626;
+      }
+
+      #loading>svg {
+        width: 6.25vw;
+        height: 6.25vw;
+        margin: auto;
+
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation: spinner 1.1s infinite linear;
+        animation: spinner 1.1s infinite linear;
+      }
+
+
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </div>
+  <div id="app"></div>
+  <div id="np2"
+    style="display: none; height: 56.25vw; margin: 0; padding: 0; color: #fff; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; position: absolute; top: 0; left: 0; width: 100%;">
+  </div>
+
+  {{{getDeviceScript deviceType debug }}}
+</body>
+
+</html>

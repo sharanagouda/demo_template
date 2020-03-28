@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+.vscode
+.npmrc
+*.cache
+*.log
+*.iml
+node_modules
+.dev
+
+/build
+/dist
+/tmp
+.env
+src/**/I18n
+
+/coverage

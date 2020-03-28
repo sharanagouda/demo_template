@@ -1,0 +1,52 @@
+@import "../../../css/colors.css";
+@import "../../../css/breakpoints.css";
+
+.container {
+  z-index: 8;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  width: 100%;
+
+  @media (--large-up) {
+    display: block;
+    right: 56px;
+  }
+}
+
+.active {
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  object-fit: contain;
+  border: solid 1px var(--primary-1);
+  background-color: var(--primary-1);
+  margin: 3px;
+  cursor: pointer;
+  @media (--large-up) {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.inactive {
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  object-fit: contain;
+  border: solid 0.5px var(--primary-1);
+  margin: 3px;
+  cursor: pointer;
+  @media (--large-up) {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}

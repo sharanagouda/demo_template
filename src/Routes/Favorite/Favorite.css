@@ -1,0 +1,11 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+.text {
+  margin-top: 2vw;
+  font-size: 2vw;
+  display: block;
+  color: var(--c-white);
+  text-align: center;
+}

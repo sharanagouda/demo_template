@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correct component markup 1`] = `
+<div
+  class="card"
+>
+  <a
+    class="link"
+    href="goldrausch-in-alaska/1000-unzen"
+    tabindex="0"
+  >
+    <div
+      class="inner"
+    >
+      <div
+        class="thumbnail-container"
+        style="background-image: url(https://eu1-test-images.disco-api.com/2017/11/19/videoasset-16852-1511063653344.png?f=jpeg&p=true&q=75&w=316); background-size: contain; background-repeat: no-repeat; background-position: center;"
+      >
+        <div
+          class="overlay"
+        />
+      </div>
+      <div
+        class="hitbox"
+      >
+        <div
+          class="title"
+        >
+          1000 Unzen
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+`;

@@ -1,0 +1,33 @@
+.heading,
+.text,
+.back {
+  display: block;
+  color: var(--c-white);
+  text-align: center;
+}
+
+.heading {
+  margin-top: 10vw;
+
+  font-size: 4vw;
+}
+
+.text {
+  margin-top: 2vw;
+  font-size: 2vw;
+}
+
+.back {
+  margin: 2vw auto 0;
+  padding: 1vw 2vw;
+  width: 10vw;
+
+  font-size: 1.5vw;
+
+  border: var(--card-border-size) solid var(--c-white);
+}
+
+.back:focus {
+  color: var(--c-black);
+  background-color: var(--c-white);
+}

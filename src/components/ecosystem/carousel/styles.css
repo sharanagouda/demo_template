@@ -1,0 +1,67 @@
+@import "../../../css/colors.css";
+@import "../../../css/breakpoints.css";
+
+.carouselContainer {
+  width: 100%;
+  height: 464px;
+  position: relative;
+  overflow: hidden;
+
+  @media (--xlarge-up) {
+    height: 70vh;
+  }
+}
+
+.carouselContainer:hover .arrow {
+  @media (--large-up) {
+    opacity: 1;
+    transition: 0.3s all;
+  }
+}
+
+.carouselItemWrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.leftArrow {
+  left: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 38px;
+  z-index: 2;
+  margin: auto;
+  cursor: pointer;
+  background-color: var(--black-65);
+  opacity: 0;
+  transition: 0.3s all;
+  @media (--large-up) {
+    display: flex;
+  }
+}
+
+.arrow:hover {
+  @media (--large-up) {
+    opacity: 1;
+    transition: 0.3s all;
+  }
+}
+
+.rightArrow {
+  right: 0;
+}
+
+.arrowIcon {
+  color: --var(--primary-1);
+  width: 20px;
+  height: auto;
+}

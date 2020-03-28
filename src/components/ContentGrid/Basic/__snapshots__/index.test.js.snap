@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correct component markup 1`] = `
+<div
+  class="container"
+>
+  <div
+    cdtv_sn_overflow_ignore="true"
+    class="scroll-manager container_horizontal"
+  >
+    <div
+      class="outer"
+    >
+      <div
+        class="inner"
+      />
+    </div>
+  </div>
+</div>
+`;

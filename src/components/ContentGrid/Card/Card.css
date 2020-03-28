@@ -1,0 +1,71 @@
+.link:focus {
+  transform: scale(1.1);
+}
+
+:focus .thumbnail-container {
+  border: var(--card-border-size) solid var(--c-favColor);
+}
+
+:focus .overlay {
+  display: none;
+}
+
+.card {
+  width: var(--card-width);
+  display: inline-block;
+  padding: 1vw 0;
+  margin-right: 2vw;
+}
+
+.link {
+  display: block;
+  outline: 0;
+  color: var(--c-primary);
+  font-family: var(--font-family);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.thumbnail-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 13.98vw;
+  background-color: var(--c-selected);
+  border: var(--card-border-size) solid transparent;
+  transition: all 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: var(--image-overlay-background);
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hitbox {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.8vw 0;
+}
+
+.title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--font-small);
+  font-weight: 400;
+}

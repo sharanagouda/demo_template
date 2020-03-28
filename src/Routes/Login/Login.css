@@ -1,0 +1,163 @@
+.login-container {
+  box-sizing: border-box;
+  padding-top: 4vw;
+  padding-right: var(--app-sidebar-width-closed);
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 2.0833vw;
+  font-size: 1.6666vw;
+  text-align: center;
+  color: white;
+}
+
+.login-options {
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+}
+
+.login-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-label {
+  width: 10vw;
+  text-align: right;
+}
+
+.input {
+  box-sizing: border-box;
+  margin: 0 1.5vw 1.5625vw;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input input {
+  padding: 1.19791vw 2.98333vw;
+  border: 0.25vw solid #484848;
+  border-radius: 0.52083vw;
+  background-color: #484848;
+  color: white;
+  font-size: 2.1875vw;
+}
+
+.input:focus input,
+.input input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.button {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 23.4275vw;
+  height: 4.6875vw;
+  padding: 0;
+  margin: 0 auto 1.5625vw;
+  line-height: 4.6875vw;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: 0.10416vw solid white;
+  border-radius: 2.0833vw;
+  outline: none;
+  transition: 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.button:focus {
+  color: black;
+  background-color: var(--c-white);
+  border-color: var(--c-white);
+}
+
+.button span {
+  font-size: 2.1875vw;
+  font-weight: 600;
+  letter-spacing: -0.09895vw;
+  box-sizing: border-box;
+  line-height: 4.6875vw;
+  color: var(--c-white);
+}
+
+.button:focus span {
+  font-size: 2.1875vw;
+  font-weight: 600;
+  letter-spacing: -0.09895vw;
+  box-sizing: border-box;
+  line-height: 4.6875vw;
+  color: var(--c-black);
+}
+
+.login-logo {
+  width: 13.9583vw;
+  height: 5.15625vw;
+  margin: 0 auto 10.78125vw;
+  background: resolve("../../assets/images/luna_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.or-label {
+  font-size: 1.6666vw;
+  box-sizing: border-box;
+  margin-bottom: 1.5625vw;
+}
+
+.welcome-text {
+  margin: 3vw 0;
+}
+
+.no-login {
+  font-size: 1.5vw;
+  font-weight: 600;
+  outline: none;
+  color: var(--c-white);
+  box-sizing: border-box;
+}
+
+.error {
+  flex: 100%;
+  justify-content: center;
+  color: var(--c-red);
+  display: none;
+}
+
+.error-visible {
+  display: block;
+}
+
+.facebook-header {
+  width: 100%;
+  height: 6vw;
+  margin-bottom: 4vw;
+  font-size: 2.1875vw;
+  font-weight: 600;
+  line-height: 6vw;
+  text-align: center;
+  letter-spacing: -0.09895vw;
+  background-color: var(--facebook-color);
+  box-sizing: border-box;
+}
+
+.facebook-code {
+  margin: 3vw 0;
+  font-size: 3.75vw;
+  color: var(--facebook-color);
+  letter-spacing: -0.09895vw;
+  box-sizing: border-box;
+}
+
+.waiting-label {
+  display: block;
+  margin: 1vw 0;
+}

@@ -1,0 +1,26 @@
+:root {
+  --c-white: #f8f8f9;
+  --c-black: #000000;
+  --c-selected: #333333;
+  --c-background: #262626;
+  --c-favColor: rgba(150, 128, 129, 0.5);
+  --c-primary: var(--c-white);
+
+  --font-large: 1.875vw;
+  --font-small: 1.35vw;
+
+  --app-height: 56.25vw;
+  --app-sidebar-width-closed: 7.5vw;
+  --app-sidebar-width-opened: 22.5vw;
+
+  --card-width: 25.15vw;
+  --card-border-size: 0.2083vw;
+
+  --image-overlay-background: linear-gradient(
+    180deg,
+    rgba(4, 5, 15, 0.1) 0%,
+    rgba(4, 5, 15, 0.2) 27.49%,
+    rgba(4, 5, 15, 0.4) 65.82%,
+    rgba(4, 5, 15, 0.6) 100%
+  );
+}
