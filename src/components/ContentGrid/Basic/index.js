@@ -18,7 +18,7 @@ export class Basic extends React.Component {
 
     const cards = items.map(item => ({
       Component: Card,
-      data: item
+      data: item,
     }));
 
     this.scrollManager = new ScrollManager(cards, {
