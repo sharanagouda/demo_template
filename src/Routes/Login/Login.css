@@ -8,6 +8,7 @@
   font-size: 1.6666vw;
   text-align: center;
   color: white;
+  background-image: linear-gradient(119deg, #160307, #5c0c1d)
 }
 
 .login-options {
@@ -40,7 +41,7 @@
 }
 
 .input input {
-  padding: 1.19791vw 2.98333vw;
+  padding: 0.19791vw 1.98333vw;
   border: 0.25vw solid #484848;
   border-radius: 0.52083vw;
   background-color: #484848;
@@ -59,9 +60,9 @@
   position: relative;
   display: block;
   width: 23.4275vw;
-  height: 4.6875vw;
+  height: 3.6875vw;
   padding: 0;
-  margin: 0 auto 1.5625vw;
+  margin: 0 auto 0.5625vw;
   line-height: 4.6875vw;
   text-decoration: none;
   color: white;
