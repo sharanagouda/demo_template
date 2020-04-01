@@ -13,13 +13,13 @@ export class Basic extends React.Component {
   constructor(props) {
     super(props);
     const { attributes, items } = props;
-
     this.attributes = attributes;
     this.items = items;
+
     const cards = items.map(item => ({
       Component: Card,
-      attributes,
-      data: item
+      data: item,
+      heading: this.attributes.heading
     }));
 
     this.scrollManager = new ScrollManager(cards, {
@@ -29,7 +29,7 @@ export class Basic extends React.Component {
 
   render() {
     const { heading } = this.attributes;
-    console.log(" heading ", heading);
+    // console.log(" heading ", heading);
 
     const smContainer = <div classNames={[style["scroll-manager"]]} />;
     const showContainer = (

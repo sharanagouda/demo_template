@@ -14,7 +14,7 @@ export class Basic extends React.Component {
   constructor(props) {
     super(props);
     const { attributes, items } = props;
-    console.log("hi ", attributes);
+    // console.log("hi ", attributes);
     this.state = {
       currentStep: 1,
       translateValue: -100,

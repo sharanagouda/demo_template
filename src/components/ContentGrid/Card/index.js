@@ -9,7 +9,7 @@ export class Card {
 
   constructor(attributes) {
     this.attributes = attributes;
-    // console.log(this.attributes)
+    console.log("Header ", this.attributes.heading);
   }
 
   render() {
