@@ -2,7 +2,7 @@ import Styles from "./StepIndicators.css";
 
 export const StepIndicator = props => {
   const indicators = [];
-  for (let index = 0; index < props.maxStep; index++) {
+  for (let index = 0; index < this.props.maxStep; index++) {
     indicators.push(
       <div
         style={{
@@ -13,9 +13,9 @@ export const StepIndicator = props => {
         }}
         key={index}
         className={
-          index === props.currentStep ? Styles.active : Styles.inactive
+          index === this.props.currentStep ? Styles.active : Styles.inactive
         }
-        onClick={() => props.onClick(index)}
+        onClick={() => this.props.onClick(index)}
       ></div>
     );
   }

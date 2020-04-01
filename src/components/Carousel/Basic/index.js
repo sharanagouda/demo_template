@@ -6,7 +6,7 @@ import { StepIndicator } from "../stepIndicator";
 
 export class Basic extends React.Component {
   static height() {
-    let height = 7.5036458333; // height + margin
+    const height = 7.5036458333; // height + margin
     return height;
   }
 
@@ -42,27 +42,27 @@ export class Basic extends React.Component {
       horizontal: true
     });
   }
-  componentDidMount = () => {
+  componentDidMount() {
     this.setTimer();
-  };
+  }
 
-  setTimer = () => {
+  setTimer() {
     if (this.props.loop) {
       this._timer = window.setInterval(
         () => this.setCurrent(this.state.currentStep + 1),
         this.props.autoplay
       );
     }
-  };
+  }
 
-  resetTimer = () => {
+  resetTimer() {
     if (this.props.loop) {
       clearInterval(this._timer);
       this.setTimer();
     }
-  };
+  }
 
-  onSwipe = e => {
+  onSwipe(e) {
     if (this.props.data.length > 1) {
       if (e === "swiped-left") {
         this.addCurrent();
@@ -72,7 +72,7 @@ export class Basic extends React.Component {
         this.resetTimer();
       }
     }
-  };
+  }
 
   componentWillUnmount() {
     if (this._timer) clearInterval(this._timer);
@@ -121,20 +121,20 @@ export class Basic extends React.Component {
       }
     );
   }
-  onStepIndicatorClick = id => {
+  onStepIndicatorClick(id) {
     this.setCurrent(id + 1);
     this.resetTimer();
-  };
+  }
 
-  onLeftClick = () => {
+  onLeftClick() {
     this.subCurrent();
     this.resetTimer();
-  };
+  }
 
-  onRightClick = () => {
+  onRightClick() {
     this.addCurrent();
     this.resetTimer();
-  };
+  }
 
   render() {
     // const { heading } = this.attributes;
