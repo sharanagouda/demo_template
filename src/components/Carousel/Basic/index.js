@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollManager } from "@discovery-dni/cd-tv.template-engine";
 import { CarouselItem } from "../CarouselItem";
 import style from "./Basic.css";
-import { StepIndicator } from "../stepIndicator";
+// import { StepIndicator } from "../stepIndicator";
 
 export class Basic extends React.Component {
   static height() {
