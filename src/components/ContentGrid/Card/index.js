@@ -9,6 +9,7 @@ export class Card {
 
   constructor(attributes) {
     this.attributes = attributes;
+    // console.log(this.attributes)
   }
 
   render() {
@@ -18,7 +19,8 @@ export class Card {
       backgroundImage: `url(${image})`,
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
+      backgroundPosition: "center",
+      borderRadius: "0.5vw"
     };
 
     return (

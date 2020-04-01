@@ -18,6 +18,7 @@ export class Basic extends React.Component {
     this.items = items;
     const cards = items.map(item => ({
       Component: Card,
+      attributes,
       data: item
     }));
 
@@ -28,27 +29,26 @@ export class Basic extends React.Component {
 
   render() {
     const { heading } = this.attributes;
-    //console.log(" heading ", heading);
+    console.log(" heading ", heading);
 
     const smContainer = <div classNames={[style["scroll-manager"]]} />;
+    const showContainer = (
+      <div classNames={[style["scroll-manager-forShow"]]} />
+    );
 
     return (
       <div classNames={[style.container]}>
-        {heading && <div classNames={[style.heading]}>{heading}</div>}
-        {/* {heading === "On Now" ? (
-          <div classNames={[style.heading]}>
-            {" "}
-            {new Hero(this.items).render()}{" "}
+        {heading === "Shows" ? (
+          <div>
+            {heading && <div classNames={[style.heading]}>{heading}</div>}
+            {this.scrollManager.render(showContainer)}
           </div>
         ) : (
-            <div></div>
-          )}
-        {heading === "On Now" ? (
-          <div classNames={[style.heading]}>On Now!!!</div>
-        ) : (
-            <div></div>
-          )} */}
-        {this.scrollManager.render(smContainer)}
+          <div>
+            {heading && <div classNames={[style.heading]}>{heading}</div>}
+            {this.scrollManager.render(smContainer)}
+          </div>
+        )}
       </div>
     );
   }
