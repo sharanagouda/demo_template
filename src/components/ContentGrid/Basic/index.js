@@ -15,11 +15,10 @@ export class Basic extends React.Component {
     const { attributes, items } = props;
     this.attributes = attributes;
     this.items = items;
-
+    // console.log(this.attributes);
     const cards = items.map(item => ({
       Component: Card,
-      data: item,
-      heading: this.attributes.heading
+      data: item
     }));
 
     this.scrollManager = new ScrollManager(cards, {

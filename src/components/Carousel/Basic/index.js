@@ -3,7 +3,7 @@ import { ScrollManager } from "@discovery-dni/cd-tv.template-engine";
 import { CarouselItem } from "../CarouselItem";
 import style from "./Basic.css";
 // import { StepIndicator } from "../stepIndicator";
-import { Card } from "../../ContentGrid/Card";
+import { CarouselCard } from "../CarouselCard";
 
 export class Basic extends React.Component {
   static height() {
@@ -36,7 +36,7 @@ export class Basic extends React.Component {
     this.attributes = attributes;
     this.items = items;
     const cards = items.map(item => ({
-      Component: Card,
+      Component: CarouselCard,
       data: item
     }));
     //console.log("length ", this.items.length);
@@ -140,7 +140,7 @@ export class Basic extends React.Component {
 
   render() {
     // const { heading } = this.attributes;
-    console.log(this.items.length);
+    // console.log("length ", this.items.length);
     const smContainer = <div classNames={[style["scroll-manager"]]} />;
     return (
       <div classNames={[style.container]}>

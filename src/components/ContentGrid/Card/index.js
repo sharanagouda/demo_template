@@ -6,15 +6,20 @@ export class Card {
     // width + margin in vw
     return 25.15 + 2;
   }
+  static height() {
+    // we need to set the width here for the scroll animation to work
+    // width + margin in vw
+    return 50.15 + 2;
+  }
 
   constructor(attributes) {
     this.attributes = attributes;
-    console.log("Header ", this.attributes.heading);
+    // console.log("Header ", this.attributes.heading);
   }
 
   render() {
-    const { image, route, name } = this.attributes;
-
+    const { image, route, name, heading } = this.attributes;
+    console.log(" header", heading);
     const thumbnailStyle = {
       backgroundImage: `url(${image})`,
       backgroundSize: "contain",
@@ -24,20 +29,41 @@ export class Card {
     };
 
     return (
-      <div classNames={[style.card]}>
-        <a attr={{ href: route }} classNames={[style.link]}>
-          <div classNames={[style.inner]}>
-            <div
-              classNames={[style["thumbnail-container"]]}
-              style={thumbnailStyle}
-            >
-              <div classNames={[style.overlay]}></div>
-            </div>
-            <div classNames={[style.hitbox]}>
-              <div classNames={[style.title]}>{name}</div>
-            </div>
+      <div>
+        {heading === "show" ? (
+          <div classNames={[style.showCard]}>
+            <a attr={{ href: route }} classNames={[style.link]}>
+              <div classNames={[style.inner]}>
+                <div
+                  classNames={[style["thumbnail-container"]]}
+                  style={thumbnailStyle}
+                >
+                  <div classNames={[style.overlay]}></div>
+                </div>
+                <div classNames={[style.hitbox]}>
+                  <div classNames={[style.title]}>{name}</div>
+                  <div classNames={[style.title]}>{heading}</div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
+        ) : (
+          <div classNames={[style.card]}>
+            <a attr={{ href: route }} classNames={[style.link]}>
+              <div classNames={[style.inner]}>
+                <div
+                  classNames={[style["thumbnail-container"]]}
+                  style={thumbnailStyle}
+                >
+                  <div classNames={[style.overlay]}></div>
+                </div>
+                <div classNames={[style.hitbox]}>
+                  <div classNames={[style.title]}>{name}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        )}
       </div>
     );
   }

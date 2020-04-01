@@ -17,6 +17,9 @@ import {
 } from "@discovery-dni/cd-tv.template-engine";
 
 export const cardDataMapper = included => data => {
+  const collection = resolveCollection(included, data);
+  let header = pathOr("", ["attributes", "title"], collection);
+  // console.log("cardMapper ", header);
   // console.log(" card data ", data);
   let img;
 
@@ -68,18 +71,20 @@ export const cardDataMapper = included => data => {
   if (route) {
     route = resolveRoute(included, route);
   }
-
   return {
     route,
     name: pathOr("", ["attributes", "name"], data),
     secondaryTitle: pathOr("", ["attributes", "secondaryTitle"], data),
-    image: img
+    image: img,
+    heading: pathOr(" ", ["type"], data)
   };
 };
 
 export const dataMapper = (data, included) => {
   const collection = resolveCollection(included, data);
 
+  // let header = pathOr("", ["attributes", "title"], collection);
+  // console.log("dataMapper ", header);
   return {
     attributes: {
       heading: pathOr("", ["attributes", "title"], collection),
