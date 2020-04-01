@@ -5,7 +5,7 @@ import style from "./Basic.css";
 
 export class Basic extends React.Component {
   static height({ attributes }) {
-    let height = 19.5036458333 + 1.5; // height + margin
+    let height = 19.5036458333 + 1.5; //height + margin
     height += attributes.heading ? 3.1354166667 : 0;
     return height;
   }
