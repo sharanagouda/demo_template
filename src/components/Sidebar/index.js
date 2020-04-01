@@ -87,28 +87,8 @@ export const createSidebar = () =>
 
       const logo = <div classNames={[style.logo]} />;
 
-      const customSidebar = {
-        text: "favorite",
-        image: {
-          attributes: {
-            alias: "tv-home-icon",
-            height: 64,
-            kind: "default",
-            name: "tv-home-icon",
-            published: "2019-12-16T11:45:53.335010Z",
-            revision: 0,
-            src:
-              "https://eu1-test-images.disco-api.com/2019/12/16/6426357c-df9c-4ea8-aa94-1876e7138ca6.png",
-            state: "published",
-            width: 68
-          },
-          id: "185081294489534290202886016248095547289",
-          type: "image"
-        },
-        route: "/tv-home"
-      };
-      const customMenu = [...menuItems, customSidebar];
-      console.log("menuItems", customMenu);
+      //const customMenu = [...menuItems, customSidebar];
+      //console.log("menuItems", customMenu);
       return new Sidebar({
         menuItems,
         footerItems,

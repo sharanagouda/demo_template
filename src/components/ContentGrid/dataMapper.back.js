@@ -17,7 +17,7 @@ import {
 } from "@discovery-dni/cd-tv.template-engine";
 
 export const cardDataMapper = included => data => {
-  // console.log(" card data ", data);
+  console.log(" card data ", data);
   let img;
 
   const images = path(["relationships", "images", "data"], data);
