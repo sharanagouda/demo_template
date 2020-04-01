@@ -3,6 +3,7 @@ import { ScrollManager } from "@discovery-dni/cd-tv.template-engine";
 import { CarouselItem } from "../CarouselItem";
 import style from "./Basic.css";
 // import { StepIndicator } from "../stepIndicator";
+import { Card } from "../../ContentGrid/Card";
 
 export class Basic extends React.Component {
   static height() {
@@ -13,6 +14,7 @@ export class Basic extends React.Component {
   constructor(props) {
     super(props);
     const { attributes, items } = props;
+    console.log("hi ", attributes);
     this.state = {
       currentStep: 1,
       translateValue: -100,
@@ -34,7 +36,7 @@ export class Basic extends React.Component {
     this.attributes = attributes;
     this.items = items;
     const cards = items.map(item => ({
-      Component: CarouselItem,
+      Component: Card,
       data: item
     }));
     //console.log("length ", this.items.length);
@@ -143,7 +145,7 @@ export class Basic extends React.Component {
     return (
       <div classNames={[style.container]}>
         {this.scrollManager.render(smContainer)}
-        {/* <div>
+        {/* <div style={{ textAlign: "center", marginTop: "25%" }}>
           {this.items.length > 1 && (
             <StepIndicator
               maxStep={this.items.length}

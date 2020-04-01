@@ -1,6 +1,8 @@
 .container {
-  background-color: aquamarine;
-  height: 77.4vw;
+  /* background-color: aquamarine; */
+  /* height: 77.4vw; */
+  padding: 0;
+  margin: 1.5vw 0;
 }
 
 .scroll-manager {

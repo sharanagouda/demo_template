@@ -4,7 +4,7 @@ export class CarouselItem {
   static width() {
     // we need to set the width here for the scroll animation to work
     // width + margin in vw
-    return 25.15 + 2;
+    return 55.15 + 2;
   }
 
   constructor(attributes) {
