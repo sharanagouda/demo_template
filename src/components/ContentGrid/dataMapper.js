@@ -70,7 +70,7 @@ export const cardDataMapper = included => data => {
   }
 
   const title = pathOr("", ["attributes", "episodeCount"], data);
-  // console.log("header ", title);
+  console.log("header ", title);
   return {
     route,
     name: pathOr("", ["attributes", "name"], data),

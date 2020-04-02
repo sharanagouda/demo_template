@@ -18,7 +18,7 @@ export class Card {
   }
 
   render() {
-    const { image, route, name, heading, episodeCount } = this.attributes;
+    const { image, route, name, episodeCount } = this.attributes;
     console.log(" eCount", episodeCount);
     const thumbnailStyle = {
       backgroundImage: `url(${image})`,
