@@ -34,7 +34,7 @@
   height: 13.98vw;
   background-color: var(--c-selected);
   border: var(--card-border-size) solid transparent;
-  border-radius: 8px;
+  border-radius: 5px;
   transition: all 0.3s;
 }
 

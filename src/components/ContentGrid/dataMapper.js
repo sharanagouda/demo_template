@@ -68,12 +68,16 @@ export const cardDataMapper = included => data => {
   if (route) {
     route = resolveRoute(included, route);
   }
+
+  const title = pathOr("", ["attributes", "episodeCount"], data);
+  // console.log("header ", title);
   return {
     route,
     name: pathOr("", ["attributes", "name"], data),
     secondaryTitle: pathOr("", ["attributes", "secondaryTitle"], data),
     image: img,
-    heading: pathOr(" ", ["type"], data)
+    heading: pathOr(" ", ["attributes", "title"], data),
+    episodeCount: pathOr("", ["attributes", "episodeCount"], data)
   };
 };
 

@@ -18,52 +18,31 @@ export class Card {
   }
 
   render() {
-    const { image, route, name, heading } = this.attributes;
-    console.log(" header", heading);
+    const { image, route, name, heading, episodeCount } = this.attributes;
+    console.log(" eCount", episodeCount);
     const thumbnailStyle = {
       backgroundImage: `url(${image})`,
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      borderRadius: "0.5vw"
+      backgroundPosition: "center"
     };
 
     return (
-      <div>
-        {heading === "show" ? (
-          <div classNames={[style.showCard]}>
-            <a attr={{ href: route }} classNames={[style.link]}>
-              <div classNames={[style.inner]}>
-                <div
-                  classNames={[style["thumbnail-container"]]}
-                  style={thumbnailStyle}
-                >
-                  <div classNames={[style.overlay]}></div>
-                </div>
-                <div classNames={[style.hitbox]}>
-                  <div classNames={[style.title]}>{name}</div>
-                  <div classNames={[style.title]}>{heading}</div>
-                </div>
-              </div>
-            </a>
+      <div classNames={[style.card]}>
+        <a attr={{ href: route }} classNames={[style.link]}>
+          <div classNames={[style.inner]}>
+            <div
+              classNames={[style["thumbnail-container"]]}
+              style={thumbnailStyle}
+            >
+              <div classNames={[style.overlay]}></div>
+            </div>
+            <div classNames={[style.hitbox]}>
+              <div classNames={[style.title]}>{name}</div>
+              <div classNames={[style.epCount]}>{episodeCount}</div>
+            </div>
           </div>
-        ) : (
-          <div classNames={[style.card]}>
-            <a attr={{ href: route }} classNames={[style.link]}>
-              <div classNames={[style.inner]}>
-                <div
-                  classNames={[style["thumbnail-container"]]}
-                  style={thumbnailStyle}
-                >
-                  <div classNames={[style.overlay]}></div>
-                </div>
-                <div classNames={[style.hitbox]}>
-                  <div classNames={[style.title]}>{name}</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        )}
+        </a>
       </div>
     );
   }
