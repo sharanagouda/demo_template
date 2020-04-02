@@ -29,7 +29,6 @@ export class Basic extends React.Component {
   render() {
     const { heading } = this.attributes;
     // console.log(" heading ", heading);
-
     const smContainer = <div classNames={[style["scroll-manager"]]} />;
     const showContainer = (
       <div classNames={[style["scroll-manager-forShow"]]} />

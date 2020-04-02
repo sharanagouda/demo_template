@@ -18,8 +18,8 @@ export class Card {
   }
 
   render() {
-    const { image, route, name, episodeCount } = this.attributes;
-    console.log(" eCount", episodeCount);
+    const { image, route, name } = this.attributes;
+    // console.log(" eCount", episodeCount);
     const thumbnailStyle = {
       backgroundImage: `url(${image})`,
       backgroundSize: "contain",
@@ -39,7 +39,6 @@ export class Card {
             </div>
             <div classNames={[style.hitbox]}>
               <div classNames={[style.title]}>{name}</div>
-              <div classNames={[style.epCount]}>{episodeCount}</div>
             </div>
           </div>
         </a>

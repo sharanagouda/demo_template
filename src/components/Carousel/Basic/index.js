@@ -139,21 +139,22 @@ export class Basic extends React.Component {
   }
 
   render() {
-    // const { heading } = this.attributes;
-    // console.log("length ", this.items.length);
+    const { heading } = this.attributes;
+    console.log("length ", heading);
     const smContainer = <div classNames={[style["scroll-manager"]]} />;
     return (
       <div classNames={[style.container]}>
-        {this.scrollManager.render(smContainer)}
-        {/* <div style={{ textAlign: "center", marginTop: "25%" }}>
-          {this.items.length > 1 && (
-            <StepIndicator
-              maxStep={this.items.length}
-              currentStep={this.state.currentStep - 1}
-              onClick={this.onStepIndicatorClick}
-            />
-          )}
-        </div> */}
+        {heading === "Hero" ? (
+          <div>
+            {heading && <div classNames={[style.heading]}>{heading}</div>}
+            {this.scrollManager.render(smContainer)}
+          </div>
+        ) : (
+          <div>
+            {heading && <div classNames={[style.heading]}>{heading}</div>}
+            {this.scrollManager.render(smContainer)}
+          </div>
+        )}
       </div>
     );
   }

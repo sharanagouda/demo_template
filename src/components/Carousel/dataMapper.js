@@ -79,10 +79,11 @@ export const cardDataMapper = included => data => {
 
 export const dataMapper = (data, included) => {
   const collection = resolveCollection(included, data);
-
+  // const heading = pathOr("", ["attributes", "title"], collection);
+  // console.log("Heading", heading);
   return {
     attributes: {
-      heading: pathOr("", ["attributes", "title"], collection),
+      heading: "Hero",
       totalCount: data.attributes.totalCount
     },
     totalCount: 100,

@@ -76,6 +76,7 @@
   white-space: nowrap;
   font-size: var(--font-small);
   font-weight: 400;
+  font-family: SFProDisplay;
 }
 
 .epCount {
