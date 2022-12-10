@@ -65,7 +65,7 @@
     "@discovery-dni/np2-ui-eurosport": "6.2.1-canary.17",
     "@discovery-dni/np2-worker": "6.2.1-canary.17",
     "lodash.includes": "^4.3.0",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "ramda": "^0.26.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
